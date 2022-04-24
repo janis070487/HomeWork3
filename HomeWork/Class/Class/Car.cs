@@ -1,0 +1,59 @@
+﻿
+//Izveidot klasi mašīna. Mašinai ir marka, nummurzīme un ātrums.
+ //   Mašīna māk sākt braukt, palielināt ātrumu, beigt braukt, samazināt ātrumu. 
+  //  Mašīna māk arī uztaurēt (Izvada konsolē "Beep beep")
+
+
+namespace Class
+{
+    public class Car
+    {
+        private string _brand;
+        private string numberPlate;
+        private double speed;
+
+        public Car(string brand) { _brand = brand; }
+        public string Brand { get { return _brand; } }
+
+        public double Speed { get { return speed; } }
+        public string NumberPlace
+        {
+            get
+            {
+                return numberPlate;
+            }
+            set
+            {
+                numberPlate = value;
+            }
+        }
+
+        public void StartDriving(double _speed)
+        {
+            speed = _speed;
+            Console.WriteLine($"Jūs sākāt kustību ar ātrumu {_speed} Km/h");
+        }
+        // Palielināt atrumu
+        public void IncreaseSpeed(double _speed)
+        {
+            speed += _speed;
+        }
+
+        public void StopDriving()
+        {
+            speed = 0;
+            Console.WriteLine("Jūs beidzāt kustību");
+        }
+       // Samazināt ātrumu
+        public void ReduceSpeed(double _speed)
+        {
+            speed -= _speed;
+        }
+
+        public void ToSignal()
+        {
+            Console.WriteLine("Beep beep");
+        }
+
+    }
+}
