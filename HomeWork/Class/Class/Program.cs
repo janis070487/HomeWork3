@@ -80,5 +80,38 @@
 //DateTime time = DateTime.Now;
 //Console.WriteLine(time.Minute);
 
-Person person = new Person();
+Console.WriteLine("Ievadiet personas dzimšnas gadu" + "\n");
+int yearOfBirth = int.Parse(Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadiet personas dzimšnas mēnesi");
+int monthOfBirth = int.Parse(Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadiet personas dzimšnas datumu");
+int datebirth = int.Parse(Console.ReadLine());
+
+Person person = new Person(yearOfBirth, monthOfBirth, datebirth);
+
+Console.WriteLine("\n" + "Ievadiet personas vardu");
+string name = (Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadiet personas uzvardu");
+string surname = (Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadiet personas dzimumu");
+string sex = (Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadiet personas hobiju");
+string hobby = Console.ReadLine();
+Console.WriteLine();
+person.Name = name;
+person.Surname = surname;
+person.Sex = sex;
+person.Hobby = hobby;
+
+Console.WriteLine($"Jūsu izveidotai personai ir pilni {person.GetAge()} gadi");
+Console.WriteLine();
 person.ToGreeting();
+
+Console.ReadLine();
+
+
