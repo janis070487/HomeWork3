@@ -1,84 +1,80 @@
 ﻿using Class;
 
 
-//Console.WriteLine("Lai izveidotu jautu telefonu ievadiet viņa brendu nosaukumu" + "\n");
-//string brandname = Console.ReadLine();
-//Phone phone = new Phone(brandname);
+Console.WriteLine("Lai izveidotu jautu telefonu ievadiet viņa brendu nosaukumu" + "\n");
+string brandname = Console.ReadLine();
+Phone phone = new Phone(brandname);
 
-//Console.WriteLine($"{"\n"}Ievadiet telefona modeļa nosaukumu");
-//phone.Model = Console.ReadLine();
+Console.WriteLine($"{"\n"}Ievadiet telefona modeļa nosaukumu");
+phone.Model = Console.ReadLine();
 
-//Console.WriteLine($"{"\n"}Ievadiet telefona platumu");
-//phone.Width = double.Parse(Console.ReadLine());
+Console.WriteLine($"{"\n"}Ievadiet telefona platumu");
+phone.Width = double.Parse(Console.ReadLine());
 
-//Console.WriteLine($"{"\n"}Ievadiet telefona garumu");
-//phone.Lenght = double.Parse(Console.ReadLine());
+Console.WriteLine($"{"\n"}Ievadiet telefona garumu");
+phone.Lenght = double.Parse(Console.ReadLine());
 
-//Console.WriteLine($"{"\n"}ievadiet lelefona augstumu");
-//phone.Height = double.Parse(Console.ReadLine());
+Console.WriteLine($"{"\n"}ievadiet lelefona augstumu");
+phone.Height = double.Parse(Console.ReadLine());
 
-//Console.WriteLine();
-//phone.GetInfo();
+Console.WriteLine();
+phone.GetInfo();
 
-//Console.WriteLine($"{"\n"}Ievadiet ziņu lai nosūtītu");
-//string mesage = Console.ReadLine();
-//Console.WriteLine($"{"\n"}Ievadiet adresāta numuru");
-//string number = Console.ReadLine();
-//Console.WriteLine();
-//phone.SendSms(number, mesage);
-//Console.WriteLine();
-//Console.WriteLine("Lai turpināntu nospiet jebkuru taustiņu");
-//Console.ReadKey();
-//Console.Clear();
-
-
-//________________________________________________________________________________________________________
-
-
-//Console.WriteLine("Lai izveidotu jaunu automašīnu ievadiet tās marku" + "\n");
-//string brandnameCar = Console.ReadLine();
-//Car car = new Car(brandnameCar);
-//Console.WriteLine();
-
-//Console.WriteLine("Ievadiet automašinas numurzīmes simbolus");
-//car.NumberPlace = Console.ReadLine();
-
-//Console.WriteLine();
-//Console.WriteLine("Lai turpināntu nospiet jebkuru taustiņu");
-//Console.ReadKey();
-//Console.Clear();
-
-//________________________________________________________________________________________________________
-
-//Console.WriteLine("Lai izveidotu jaunu produktu ievadiet tās nosaukumu" + "\n");
-//string produktName = Console.ReadLine();
-
-//Console.WriteLine("\n" + "Ievadi produkta platumu centimetros");
-//double productWidth = double.Parse(Console.ReadLine());
-
-//Console.WriteLine("\n" + "Ievadi produkta garumu centimetros");
-//double productLenght = double.Parse(Console.ReadLine());
-
-//Console.WriteLine("\n" + "Ievadi produkta svaru kilogramos");
-//double productWeight = double.Parse(Console.ReadLine());
-
-
-//Product produkt = new Product(produktName, productWidth, productLenght, productWeight);
-//Console.WriteLine();
-
-//produkt.PrintInfo();
-
-//Console.WriteLine();
-//Console.WriteLine("Lai turpināntu nospiet jebkuru taustiņu");
-//Console.ReadKey();
-//Console.Clear();
+Console.WriteLine($"{"\n"}Ievadiet ziņu lai nosūtītu");
+string mesage = Console.ReadLine();
+Console.WriteLine($"{"\n"}Ievadiet adresāta numuru");
+string number = Console.ReadLine();
+Console.WriteLine();
+phone.SendSms(number, mesage);
+Console.WriteLine();
+Console.WriteLine("Lai turpināntu nospiet jebkuru taustiņu");
+Console.ReadKey();
+Console.Clear();
 
 
 //________________________________________________________________________________________________________
 
 
-//DateTime time = DateTime.Now;
-//Console.WriteLine(time.Minute);
+Console.WriteLine("Lai izveidotu jaunu automašīnu ievadiet tās marku" + "\n");
+string brandnameCar = Console.ReadLine();
+Car car = new Car(brandnameCar);
+Console.WriteLine();
+
+Console.WriteLine("Ievadiet automašinas numurzīmes simbolus");
+car.NumberPlace = Console.ReadLine();
+Console.WriteLine();
+Console.WriteLine("Lai turpināntu nospiet jebkuru taustiņu");
+Console.ReadKey();
+Console.Clear();
+
+//________________________________________________________________________________________________________
+
+Console.WriteLine("Lai izveidotu jaunu produktu ievadiet tās nosaukumu" + "\n");
+string produktName = Console.ReadLine();
+
+Console.WriteLine("\n" + "Ievadi produkta platumu centimetros");
+double productWidth = double.Parse(Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadi produkta garumu centimetros");
+double productLenght = double.Parse(Console.ReadLine());
+
+Console.WriteLine("\n" + "Ievadi produkta svaru kilogramos");
+double productWeight = double.Parse(Console.ReadLine());
+
+
+Product produkt = new Product(produktName, productWidth, productLenght, productWeight);
+Console.WriteLine();
+
+produkt.PrintInfo();
+
+Console.WriteLine();
+Console.WriteLine("Lai turpināntu nospiet jebkuru taustiņu");
+Console.ReadKey();
+Console.Clear();
+
+
+//________________________________________________________________________________________________________
+
 
 Console.WriteLine("Ievadiet personas dzimšnas gadu" + "\n");
 int yearOfBirth = int.Parse(Console.ReadLine());
