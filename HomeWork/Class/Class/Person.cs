@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-using System.Globalization;
-using System.Threading;
+﻿
 namespace Class
 {
     public class Person
     {
-
-      //private DateTime nowTime = new DateTime();
         private string surname;
         private string name;
         private int yearOfBirth;
@@ -27,7 +17,7 @@ namespace Class
         public int YearOfBirth { get { return yearOfBirth; } set { yearOfBirth = value; } }
         public int MonthOfBirth { get { return monthOfBirth; } set { monthOfBirth = value; } }
         public string Sex { get { return sex; } set { sex = value; } }
-       // public int Age { get { return age; } }
+      
         public string Hobby { get { return hobby; } set { hobby = value; } }  
         public int DateBirth { get { return datebirth; } }
 
@@ -65,7 +55,6 @@ namespace Class
         }
         public void ToGreeting()
         {
-            //Hello my name is {name} {surname} and I am {yearsOld}"
             Console.WriteLine();
             Console.WriteLine($"Hello my name is {name} {surname} and I am {GetAge()} year");
         }
